@@ -18,7 +18,13 @@
         </style>
         <script>
             function seleccionSi(){
-                alert('tell me que deseas hacer por whats :p');
+                msg = confirm('tell me por whats que deseas hacer :p');
+                if(msg == true){
+                    window.location = 'https://wa.me/4851164303';
+                }else{
+                    alert('igual enviame whats');
+                    window.location = 'https://wa.me/4851164303';
+                }
             }
             function seleccionNo(){
                 width = window.innerWidth;
